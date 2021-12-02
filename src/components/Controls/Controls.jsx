@@ -11,7 +11,6 @@ export default function Controls({
   types,
   filterChange,
   selectedType,
-  sortChange,
 }) {
   return (
     <div className="controlsContainer">
