@@ -6,9 +6,9 @@ export default function FilterForm({types, filterChange, selectedType}) {
         value={selectedType}
         onChange={(event) => filterChange(event.target.value)}
       >
-        <option value='all'>All</option>
+        <option value='all' key='all'>All</option>
         {types.map(({type}) => (
-          <option value={type}>{type}</option>
+          <option value={type} key={type}>{type}</option>
         ))}
       </select>
     </div>
